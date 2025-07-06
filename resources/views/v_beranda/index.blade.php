@@ -33,7 +33,7 @@
                     </h2>
 
                     <div class="product-btns">
-                        <a href="{{ route('produk.detail', $row->id) }}" title="Detail Produk">
+                        <a href="{{ route('produk.detail', $row->id) }}" class="main-btn icon-btn" title="Detail Produk">
                             <button class="main-btn icon-btn">
                                 <i class="fa fa-search-plus"></i>
                             </button>
@@ -44,7 +44,7 @@
                             @csrf
                             <button type="submit" class="primary-btn add-to-cart"><i
                                     class="fa fa-shopping-cart"></i> Pesan</button>
-                        </form> 
+                        </form>
                     </div>
                 </div>
             </div>

@@ -67,11 +67,10 @@ alt="">
                 </div>
 
                 <div class="product-btns">
-                    <form action="#" method="post"
+                    <form action="{{ route('order.addToCart', $row->id) }}" method="post"
                         style="display: inline-block;">
                         @csrf
-                        <button type="submit" class="primary-btn add-to-cart"><i class="fa
-fa-shopping-cart"></i>
+                        <button type="submit" class="primary-btn add-to-cart"><i class="fa fa-shopping-cart"></i>
                             Pesan</button>
                     </form>
                 </div>
@@ -83,4 +82,4 @@ fa-shopping-cart"></i>
 <!-- /Product Details -->
 
 <!-- end template-->
-@endsection  
+@endsection
